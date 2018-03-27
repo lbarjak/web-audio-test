@@ -14,7 +14,6 @@ const gainNode = ctx.createGain();
 gainNode.connect(ctx.destination);
 gainNode.gain.setValueAtTime(0.5, 0);
 
-let arrayBuffer = null;
 let audioBuffer = null;
 let audioSource = null;
 
@@ -24,14 +23,10 @@ const params = {
   volume:gainNode.gain.value,
   loop:false,
   LOAD:() => {
-    xhr(files[`${params.file}_${params.size}`], (buffer) => {
-      arrayBuffer = buffer;
-    });
-  },
-  DECODE:() => {
-    if(!arrayBuffer) return;
-    ctx.decodeAudioData(arrayBuffer, (buffer) => {
-      audioBuffer = buffer;
+    xhr(files[`${params.file}_${params.size}`], (arrayBuffer) => {
+      ctx.decodeAudioData(arrayBuffer, (buffer) => {
+        audioBuffer = buffer;
+      });
     });
   },
   PLAY:() => {
@@ -61,7 +56,6 @@ gui.add(params, 'loop').onChange((value) => {
   if(audioSource) audioSource.loop = value;
 });
 gui.add(params, 'LOAD');
-gui.add(params, 'DECODE');
 gui.add(params, 'PLAY');
 gui.add(params, 'STOP');
 
