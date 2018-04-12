@@ -1,5 +1,9 @@
 # web-audio-test
 
-[Normal example](https://zprodev.github.io/web-audio-test/dist/)
+## WebAudio Examples
 
-[Wait for decode with promise](https://zprodev.github.io/web-audio-test/promise-decoding/)
+[Project](examples)
+
+## Test
+
+[Decode](https://zprodev.github.io/web-audio-test/tests/decode/)
