@@ -24,7 +24,7 @@ const params = {
   loop:false,
   LOAD:() => {
     xhr(files[`${params.file}_${params.size}`], (arrayBuffer) => {
-      ctx.decodeAudioData(arrayBuffer, (buffer) => {
+      ctx.decodeAudioData(arrayBuffer).then((buffer) => {
         audioBuffer = buffer;
       });
     });
