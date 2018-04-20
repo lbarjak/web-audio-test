@@ -15,9 +15,10 @@ request.onload =  () => {
 }
 request.send();
 
-document.addEventListener('touchend', initAudioContext);
+const eventName = typeof document.ontouchend !== 'undefined' ? 'touchend' : 'mouseup';
+document.addEventListener(eventName, initAudioContext);
 function initAudioContext(){
-  document.removeEventListener('touchend', initAudioContext);
+  document.removeEventListener(eventName, initAudioContext);
   // wake up AudioContext
   ctx.resume();
 }

@@ -6,12 +6,12 @@
 
 ## Test
 
-[Decode](https://zprodev.github.io/web-audio-test/tests/decode/)
+[Decode](https://zprodev.github.io/web-audio-test/tests/decode/) [[code](tests/decode/index.js)]
 
-[Decode(Promise-based syntax)](https://zprodev.github.io/web-audio-test/tests/decode-promise/)
+[Decode(Promise-based syntax)](https://zprodev.github.io/web-audio-test/tests/decode-promise/) [[code](tests/decode-promise/index.js)]
 
-[Auto Start](https://zprodev.github.io/web-audio-test/tests/auto-start/)
+[Auto Start](https://zprodev.github.io/web-audio-test/tests/auto-start/) [[code](tests/auto-start/index.js)]
 
-[Auto Start(Play by touch for iOS)](https://zprodev.github.io/web-audio-test/tests/auto-start-touch-play/)
+[Auto Start(Play by touch for iOS)](https://zprodev.github.io/web-audio-test/tests/auto-start-touch-play/) [[code](tests/auto-start-touch-play/index.js)]
 
-[Auto Start(Resume by touch for Android Chrome66^)](https://zprodev.github.io/web-audio-test/tests/auto-start-touch-resume/)
+[Auto Start(Resume by touch for Chrome66^)](https://zprodev.github.io/web-audio-test/tests/auto-start-touch-resume/) [[code](tests/auto-start-touch-resume/index.js)]
