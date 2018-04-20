@@ -12,4 +12,6 @@
 
 [Auto Start](https://zprodev.github.io/web-audio-test/tests/auto-start/)
 
-[Auto Start(Touch init)](https://zprodev.github.io/web-audio-test/tests/auto-start-touch-init/)
+[Auto Start(Play by touch for iOS)](https://zprodev.github.io/web-audio-test/tests/auto-start-touch-play/)
+
+[Auto Start(Resume by touch for Android Chrome66^)](https://zprodev.github.io/web-audio-test/tests/auto-start-touch-resume/)
