@@ -5,7 +5,6 @@
   <title>web-audio-test auto-start-touch-play</title>
   <link rel="stylesheet" type="text/css" href="https://zprodev.github.io/web-audio-test/lib/vs2015.css">
   <script type="text/javascript" src="https://zprodev.github.io/web-audio-test/lib/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
   <pre><code class="js" id="code"></code></pre>
@@ -14,6 +13,7 @@
     codeRequest.open('GET', './index.js', true);
     codeRequest.onload =  () => {
       document.getElementById('code').appendChild(document.createTextNode(codeRequest.response));
+      hljs.initHighlighting();
     }
     codeRequest.send();
   </script>
