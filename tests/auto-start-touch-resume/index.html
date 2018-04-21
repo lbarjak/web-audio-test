@@ -14,7 +14,7 @@
     const codeRequest = new XMLHttpRequest();
     codeRequest.open('GET', './index.js', true);
     codeRequest.onload =  () => {
-      document.getElementById('code').appendChild(document.createTextNode(request.response));
+      document.getElementById('code').appendChild(document.createTextNode(codeRequest.response));
     }
     codeRequest.send();
   </script>
