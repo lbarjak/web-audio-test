@@ -4,13 +4,12 @@
   <meta charset="utf-8">
   <title>web-audio-test auto-start-touch-resume</title>
   <link rel="stylesheet" type="text/css" href="https://zprodev.github.io/web-audio-test/lib/vs2015.css">
+  <script type="text/javascript" src="https://zprodev.github.io/web-audio-test/lib/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-  <script type="text/javascript" src="./index.js"></script>
   <pre><code class="js" id="code"></code></pre>
-  <script type="text/javascript" src="https://zprodev.github.io/web-audio-test/lib/highlight.pack.js"></script>
   <script>
-    hljs.initHighlightingOnLoad();
     const codeRequest = new XMLHttpRequest();
     codeRequest.open('GET', './index.js', true);
     codeRequest.onload =  () => {
@@ -18,5 +17,6 @@
     }
     codeRequest.send();
   </script>
+  <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>
