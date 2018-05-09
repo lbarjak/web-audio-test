@@ -6,6 +6,8 @@
 
 ## Test
 
+### Use AudioBuffer
+
 [Decode](https://zprodev.github.io/web-audio-test/tests/decode/) 
 
 [Decode(Promise-based syntax)](https://zprodev.github.io/web-audio-test/tests/decode-promise/) 
@@ -19,3 +21,14 @@
 [Auto Start(Play by touch for iOS)](https://zprodev.github.io/web-audio-test/tests/auto-start-touch-play/)
 
 [Auto Start(Resume by touch for Chrome66^)](https://zprodev.github.io/web-audio-test/tests/auto-start-touch-resume/)
+
+### Use AudioElement
+
+[AudioElement Play](https://zprodev.github.io/web-audio-test/tests/element-play/)
+
+[AudioElement Touch Play](https://zprodev.github.io/web-audio-test/tests/element-touch-play/)
+
+[AudioElement Auto Play](https://zprodev.github.io/web-audio-test/tests/element-auto-play/) 
+
+[AudioElement Auto Play Touch](https://zprodev.github.io/web-audio-test/tests/element-auto-play-touch/) 
+
