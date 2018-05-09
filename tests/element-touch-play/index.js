@@ -8,7 +8,7 @@ audioSource.connect(ctx.destination);
 const userAgent = window.navigator.userAgent.toLowerCase();
 console.log(userAgent);
 if(userAgent.indexOf('chrome') != -1) {
-  const eventName = typeof document.ontouchend !== 'undefined' ? 'touchend' : 'mouseup';
+  var eventName = typeof document.ontouchend !== 'undefined' ? 'touchend' : 'mouseup';
   document.addEventListener(eventName, initAudioContext);
   function initAudioContext(){
     document.removeEventListener(eventName, initAudioContext);
@@ -18,7 +18,7 @@ if(userAgent.indexOf('chrome') != -1) {
     audioSource.mediaElement.play();
   }
 } else if(userAgent.indexOf('safari') != -1) {
-  const eventName = typeof document.ontouchstart !== 'undefined' ? 'touchstart' : 'mousedown';
+  var eventName = typeof document.ontouchstart !== 'undefined' ? 'touchstart' : 'mousedown';
   document.addEventListener(eventName, initAudioContext);
   function initAudioContext(){
     document.removeEventListener(eventName, initAudioContext);
