@@ -15,11 +15,9 @@ request.onload =  () => {
 }
 request.send();
 
-document.addEventListener('touchend', initAudioContext);
+document.addEventListener('touchstart', initAudioContext);
 function initAudioContext(){
-  document.removeEventListener('touchend', initAudioContext);
+  document.removeEventListener('touchstart', initAudioContext);
   // wake up AudioContext
-  const emptySource = ctx.createBufferSource();
-  emptySource.start(0);
-  emptySource.stop();
+  ctx.createBufferSource().start();
 }
