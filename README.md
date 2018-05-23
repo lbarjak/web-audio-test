@@ -16,7 +16,11 @@
 
 [Closed Decode(Touch start)](https://zprodev.github.io/web-audio-test/tests/closed-decode-touch-start/) 
 
-[Multiple Play(Touch start)](https://zprodev.github.io/web-audio-test/tests/multiple-play/) 
+[Play > Release (disconnect only)](https://zprodev.github.io/web-audio-test/tests/multiple-play/) 
+
+[Play > Release ( + Buffer=null)](https://zprodev.github.io/web-audio-test/tests/multiple-play-null/) 
+
+[Play > Release ( + ctx.close)](https://zprodev.github.io/web-audio-test/tests/multiple-play-close/) 
 
 [Auto Start](https://zprodev.github.io/web-audio-test/tests/auto-start/) 
 
