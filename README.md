@@ -16,6 +16,8 @@
 
 [Closed Decode(Touch start)](https://zprodev.github.io/web-audio-test/tests/closed-decode-touch-start/) 
 
+[Multiple Play(Touch start)](https://zprodev.github.io/web-audio-test/tests/multiple-play/) 
+
 [Auto Start](https://zprodev.github.io/web-audio-test/tests/auto-start/) 
 
 [Auto Start(Play by touch for iOS)](https://zprodev.github.io/web-audio-test/tests/auto-start-touch-play/)
