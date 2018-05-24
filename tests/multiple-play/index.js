@@ -12,7 +12,10 @@ document.addEventListener(eventName, () => {
   request.responseType = 'arraybuffer';
   request.onload =  () => {
     ctx.decodeAudioData(request.response, (audioBuffer) => {
-      if(audioSource) audioSource.disconnect();
+      if(audioSource){
+        audioSource.stop();
+        audioSource.disconnect();
+      }
 
       audioSource = ctx.createBufferSource();
       audioSource.buffer = audioBuffer;
